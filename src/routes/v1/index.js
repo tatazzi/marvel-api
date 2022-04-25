@@ -15,6 +15,10 @@ const defaultRoutes = [
     path: '/users',
     route: userRoute,
   },
+  {
+    path: '/chars',
+    route: userRoute,
+  },
 ];
 
 const devRoutes = [
