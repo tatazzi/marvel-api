@@ -10,7 +10,7 @@ const createCharacter = catchAsync(async (req, res) => {
 });
 
 const getCharacters = catchAsync(async (req, res) => {
-  const filter = pick(req.query, ['name', 'type']);
+  const filter = pick(req.query, ['realName', 'type']);
   const options = pick(req.query, ['sortBy', 'limit', 'page']);
   const result = await characterService.queryCharacters(filter, options);
   res.send(result);
